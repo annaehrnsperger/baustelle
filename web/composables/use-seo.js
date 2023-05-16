@@ -29,5 +29,6 @@ export default function ({ general, title, seo }) {
       },
     ],
     link: [general.favicon ? { rel: 'icon', type: 'image/png', href: general.favicon } : { rel: 'icon', href: 'data:image' }],
+    // script: [{ defer: true, 'data-domain': 'domain.de', src: 'https://plausible.io/js/plausible.js' }],
   });
 }

@@ -64,7 +64,7 @@ const dimensions = computed(() => {
 });
 
 const setHotspot = computed(() => {
-  if (!props.media.hotspot) return { x: 0, y: 0 };
+  if (!props.media.hotspot) return { x: 50, y: 50 };
 
   return { x: props.media.hotspot?.x * 100, y: props.media.hotspot?.y * 100 };
 });

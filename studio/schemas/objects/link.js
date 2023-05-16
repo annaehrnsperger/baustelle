@@ -1,5 +1,5 @@
 import { FiLink } from 'react-icons/fi';
-import { PAGES } from '../../constants';
+import { PAGES } from '../../utils/sanityConstants';
 
 export default {
   title: 'Link',
@@ -30,6 +30,7 @@ export default {
       type: 'reference',
       to: PAGES,
       hidden: ({ parent }) => !parent?.type || parent.type !== 'internalLink',
+      options: { disableNew: true },
     },
     {
       name: 'href',

@@ -17,7 +17,7 @@ import 'lazysizes/plugins/blur-up/ls.blur-up';
 useCredits();
 
 onMounted(() => {
-  // fix nuxt bug when navigation fast with page transitions
+  // fix nuxt bug when navigating fast on page transition
   const messages = [
     `Uncaught NotFoundError: Failed to execute 'insertBefore' on 'Node': The node before which the new node is to be inserted is not a child of this node.`, // chromium based
     `NotFoundError: Node.insertBefore: Child to insert before is not a child of this node`, // firefox

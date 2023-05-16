@@ -1,10 +1,11 @@
 <template>
   <div class="block-content">
-    <SanityContent :blocks="blocks" :serializers="serializers" />
+    <SanityBlocks :blocks="blocks" :serializers="serializers" />
   </div>
 </template>
 
 <script setup>
+import { SanityBlocks } from 'sanity-blocks-vue-component';
 import Link from './Serializers/Link.vue';
 import Highlight from './Serializers/Highlight.vue';
 
