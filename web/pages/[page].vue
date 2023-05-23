@@ -1,6 +1,6 @@
 <template>
   <article class="pt-12">
-    <component :is="chooseModule(module)" v-for="module in page.content" :key="module._key" :module="module" />
+    <Modules :modules="page.content" />
   </article>
 </template>
 
@@ -31,12 +31,4 @@ page.value = data.value.page;
 if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true });
 
 useSeo({ general: data.value.general, title: page.value.title, seo: page.value.seo });
-
-const copy = resolveComponent('copy');
-const mediaGallery = resolveComponent('mediaGallery');
-
-const chooseModule = (module) => {
-  if (module._type === 'copy') return copy;
-  if (module._type === 'mediaGallery') return mediaGallery;
-};
 </script>

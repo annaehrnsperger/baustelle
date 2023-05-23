@@ -1,5 +1,5 @@
 <template>
-  <div class="block-content">
+  <div v-if="blocks" class="block-content">
     <SanityBlocks :blocks="blocks" :serializers="serializers" />
   </div>
 </template>

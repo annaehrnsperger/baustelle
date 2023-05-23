@@ -9,6 +9,7 @@ export default defineType({
   title: 'Block Content',
   name: 'blockContent',
   type: 'array',
+  description: 'Create paragraphs with the key combination: shift + enter',
   of: [
     defineArrayMember({
       title: 'Block',
