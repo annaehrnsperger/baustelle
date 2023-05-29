@@ -27,6 +27,7 @@ export default {
       name: 'metaDescription',
       type: 'text',
       validation: (Rule) => Rule.max(155).warning('Should be under 155 characters').required(),
+      description: '1200x630 recommended',
       group: 'seo',
     },
     {

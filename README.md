@@ -21,7 +21,7 @@ Demo → [baustelle.annaehrnsperger.de](https://baustelle.annaehrnsperger.de/)
 
 ```bash
 cd studio/
-npm create sanity@latest
+pnpm create sanity@latest
 ```
 
 - Abort with `ctrl + c` when "Project output path" appears
