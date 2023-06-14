@@ -7,6 +7,28 @@ export default {
   icon: FiHome,
   fields: [
     {
+      title: 'Options',
+      name: 'options',
+      type: 'object',
+      options: { columns: 2 },
+      fields: [
+        {
+          title: 'Option 1?',
+          name: 'isOption',
+          type: 'boolean',
+          options: { layout: 'checkbox' },
+          initialValue: true,
+        },
+        {
+          title: 'Option 1?',
+          name: 'isOption2',
+          type: 'boolean',
+          options: { layout: 'checkbox' },
+          initialValue: false,
+        },
+      ],
+    },
+    {
       name: 'title',
       type: 'string',
       title: 'Title',
