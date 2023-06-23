@@ -36,4 +36,25 @@ const date = computed(() => {
   const date = new Date(project.value.date);
   return `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()}, ${date.getFullYear()}`;
 });
+
+// const getCurrentIndex = () => {
+//   const slugs = homepage.value.projects.map((project) => project.slug.current);
+//   return slugs.indexOf(project.value.slug.current);
+// };
+
+// const prevProject = computed(() => {
+//   if (getCurrentIndex() === 0) {
+//     return homepage.value.projects[homepage.value.projects.length - 1];
+//   } else {
+//     return homepage.value.projects[getCurrentIndex() - 1];
+//   }
+// });
+
+// const nextProject = computed(() => {
+//   if (getCurrentIndex() === homepage.value.projects.length - 1) {
+//     return homepage.value.projects[0];
+//   } else {
+//     return homepage.value.projects[getCurrentIndex() + 1];
+//   }
+// });
 </script>
