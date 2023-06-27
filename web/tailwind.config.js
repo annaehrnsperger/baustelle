@@ -53,6 +53,9 @@ module.exports = {
       widest: '0.1em',
     },
     extend: {
+      height: {
+        screen: '100svh',
+      },
       gridTemplateColumns: {
         14: 'repeat(14, minmax(0, 1fr))',
         16: 'repeat(16, minmax(0, 1fr))',

@@ -1,3 +1,9 @@
+@supports not (height: 100svh) {
+  .h-screen {
+    height: 100vh;
+  }
+}
+
 /* TODO */
 @supports not (aspect-ratio: 1) {
   .thumb {
