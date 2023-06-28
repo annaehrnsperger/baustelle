@@ -1,9 +1,17 @@
 <template>
-  <video ref="video" :class="classNames" :poster="thumbnail" :autoplay="autoplay" :playsinline="playsinline" :muted="muted" :loop="loop"></video>
+  <mux-video
+    :playback-id="props.src"
+    :poster="thumbnail"
+    :class="classNames"
+    :autoplay="autoplay"
+    :playsinline="playsinline"
+    :muted="muted"
+    :loop="loop"
+  />
 </template>
 
 <script setup>
-import Hls from 'hls.js';
+import '@mux/mux-video';
 
 const props = defineProps({
   src: String,
@@ -27,25 +35,12 @@ const props = defineProps({
   },
 });
 
-const video = ref(null);
-
 const thumbnail = computed(() => `https://image.mux.com/${props.src}/thumbnail.webp${props.thumbtime === null ? '' : `?time=${props.thumbtime}`}`);
-
-onMounted(() => {
-  const videoSrc = `https://stream.mux.com/${props.src}.m3u8`;
-
-  if (Hls.isSupported()) {
-    const hls = new Hls();
-    hls.loadSource(videoSrc);
-    hls.attachMedia(video.value);
-  } else if (video.value.canPlayType('application/vnd.apple.mpegurl')) {
-    video.value.src = videoSrc;
-  }
-});
 </script>
 
 <style scoped>
-video {
+video,
+mux-video {
   @apply w-full h-full object-cover;
 }
 </style>

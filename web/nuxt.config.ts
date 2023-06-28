@@ -3,6 +3,12 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
 
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => ['mux-video'].includes(tag),
+    },
+  },
+
   //TODO
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },

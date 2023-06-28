@@ -68,6 +68,9 @@ importers:
 
   web:
     dependencies:
+      '@mux/mux-player':
+        specifier: ^1.11.2
+        version: 1.11.2
       '@nuxtjs/sanity':
         specifier: ^1.7.2
         version: 1.7.2
@@ -2375,6 +2378,14 @@ packages:
       tslib: 2.5.3
     dev: false
 
+  /@mux/mux-player@1.11.2:
+    resolution: {integrity: sha512-bEMsNxme5hjvs9Dl4JyVtpwY7AJKWPFvte6XkNBnPt/P3h57BA/RB4GeLSHIu+BBn/yt/yMScGwC447/bIbu3g==}
+    dependencies:
+      '@mux/mux-video': 0.15.4
+      '@mux/playback-core': 0.18.3
+      media-chrome: 1.1.2
+    dev: false
+
   /@mux/mux-video-react@0.7.13(@types/react@18.0.25)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-pGTO1Myi0pqbQCz53Vt3t0Q9KusLdKtFyyBj2imNcpPmtOB7cfx+S+1mIdzqm5ScBRqYkEneOK+WFBUK9RLP8w==}
     peerDependencies:
@@ -2393,6 +2404,14 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@mux/mux-video@0.15.4:
+    resolution: {integrity: sha512-UqQ4x9zqkN3o8UvM8wBIp17zNE+8tXpUdq2Vkjq5WtwjANuhCH+A1AfW61vuaxlN2LF7Sv7wzAoSWFFe8+MpPg==}
+    dependencies:
+      '@mux/playback-core': 0.18.3
+      castable-video: 0.5.2
+      custom-media-element: 0.2.0
     dev: false
 
   /@mux/playback-core@0.18.3:
@@ -4670,6 +4689,10 @@ packages:
   /caniuse-lite@1.0.30001503:
     resolution: {integrity: sha512-Sf9NiF+wZxPfzv8Z3iS0rXM1Do+iOy2Lxvib38glFX+08TCYYYGR5fRJXk4d77C4AYwhUjgYgMsMudbh2TqCKw==}
 
+  /castable-video@0.5.2:
+    resolution: {integrity: sha512-eP19NY8AF9G+Xj87R447GMkWuUc0W3DSNx5qOypH/+mr2aaHRONaIK5H4bxMgpXZslZ2vNNvCuVuKi3VdCUGEA==}
+    dev: false
+
   /chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
     engines: {node: '>=4'}
@@ -5217,6 +5240,10 @@ packages:
   /cuint@0.2.2:
     resolution: {integrity: sha512-d4ZVpCW31eWwCMe1YT3ur7mUDnTXbgwyzaL320DrcRT45rfjYxkt5QWLrmOJ+/UEAI2+fQgKe/fCjR8l4TpRgw==}
     dev: true
+
+  /custom-media-element@0.2.0:
+    resolution: {integrity: sha512-N++UzR1COFip4DrtZkS99VDCcQvVCJmbqI7qaxZtHWKdAv/RUYIOnmJbP/HHk2un0PjvtFNKHfNLiFsd9BmnMQ==}
+    dev: false
 
   /cyclist@1.0.2:
     resolution: {integrity: sha512-0sVXIohTfLqVIW3kb/0n6IiWF3Ifj5nm2XaSrLq2DI6fKIGa2fYAZdk917rUneaeLVpYfFcyXE2ft0fe3remsA==}
@@ -7719,6 +7746,10 @@ packages:
 
   /media-chrome@0.20.4:
     resolution: {integrity: sha512-lORsPuwGWEZSkHgkLnTVWYKr5/QF625BFcnUiLaCvicD8WVaD+EA2DNsuuOEHC61iY9LUwy5L+YldCG19Aamdw==}
+    dev: false
+
+  /media-chrome@1.1.2:
+    resolution: {integrity: sha512-lMkkJUQW2fln77mdWZDNDQwPDNOwwmvt4E8pMLua15fK+TjyVHxNEHesVJwkKvEIjyXjdW8ybrGThiRJ85wxXw==}
     dev: false
 
   /media-typer@0.3.0:
