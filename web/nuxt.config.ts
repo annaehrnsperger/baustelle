@@ -3,6 +3,8 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
 
+  ssr: true,
+
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ['mux-video'].includes(tag),
